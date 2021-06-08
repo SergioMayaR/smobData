@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Solicitudes</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='index.js'></script>
+</head>
+
+<body ng-app="ctrlInformacion" ng-controller="ctrlInformacion" id="ctrlInformacion">
+    <!-- Menu -->
+    <div class="navbar-fixed">
+        <nav class="nav-extended z-depth-3">
+            <div id="menu" class="nav-wrapper light-blue darken-3">
+                <a class="brand-logo cursor-default">
+                    <img class="brand-logo" src="http://drive.google.com/uc?export=view&id=1Mm8qah1bZJU2j5JFzPcoTDw93DS2hWmr" alt="Logo">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                </ul>
+            </div>
+            <!-- Tabs -->
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                </ul>
+            </div>
+            <!-- Fin de tabs-->
+        </nav>
+    </div>
+    <!-- Fin del menu -->
+    <div class="container z-depth-1">
+        <!-- ng-show="loaded" -->
+        <!-- Fila -->
+        <div class="row">
+            <div class="col s12" style="margin: 25px 0px; padding: 0;overflow:scroll;height:100%;width:100%;">
+                <!-- Table con las solicitudes del usuario -->
+                <table class="responsive-table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="tableColor">Nombre</th>
+                            <th class="tableColor">Correo</th>
+                            <th class="tableColor">Teléfono </th>
+                            <th class="tableColor">Edad</th>
+                            <th class="tableColor">Salario mensual</th>
+                            <th class="tableColor">Monto Solicitado</th>
+                            <th class="tableColor">Ocupación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="row in data">
+                            <td class="class-name">{{row[1]}}</td>
+                            <td class="class-email">{{row[2]}}</td>
+                            <td class="class-tel">{{row[3]}}</td>
+                            <td class="class-edad">{{row[4]}}</td>
+                            <td class="class-salario">{{row[5]}}</td>
+                            <td class="class-monto">{{row[6]}}</td>
+                            <td class="class-ocupacion">{{row[7]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

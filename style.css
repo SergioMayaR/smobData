@@ -1,0 +1,91 @@
+	.colorAzuls {
+	    background-color: #74bb20 !important;
+	}
+	
+	.container {
+	    border-radius: 5px !important;
+	    margin-top: 40px;
+	    width: 1600PX !important;
+	    max-width: 1219px !important;
+	    padding: 20px !important;
+	    background: #fbfbfb !important;
+	}
+	
+	table.responsive-table thead tr {
+	    display: contents !important;
+	}
+	
+	td,
+	th {
+	    border-radius: 0px !important;
+	}
+	
+	.tabs .tab {
+	    text-transform: none !important;
+	}
+	
+	.tabs.tabs-transparent {
+	    background-color: transparent;
+	}
+	
+	.tableColor {
+	    background: black !important;
+	    color: #FFFFFF;
+	    text-align: center;
+	}
+	
+	.table-striped tbody tr:nth-of-type(odd) {
+	    background-color: rgba(0, 0, 0, .05)
+	}
+	
+	.table-hover tbody tr:hover {
+	    background-color: rgba(0, 0, 0, .075)
+	}
+	
+	.table-bordered {
+	    border: 1px solid #c7c7c7;
+	}
+	
+	.table-bordered td {
+	    border: 1px solid #c7c7c7;
+	}
+	
+	@media only screen and (max-width: 992px) {
+	    .table-bordered {
+	        border: 0px !important
+	    }
+	    .table-bordered td {
+	        border: 0px !important
+	    }
+	    .brand-logo {
+	        margin-top: 3px !important;
+	    }
+	}
+	
+	@media only screen and (min-width: 1366px) {
+	    .fixed-action-btn {
+	        top: 120px !important;
+	    }
+	}
+	
+	#menu {
+	    background: #fbfbfb !important;
+	}
+	
+	#nav-mobile>li>a {
+	    height: 60px !important;
+	    text-align: right !important;
+	}
+	
+	.nav-content {
+	    background: black !important
+	}
+	
+	.row-data-user {
+	    color: #444 !important;
+	}
+	
+	.brand-logo {
+	    width: 23%;
+	    margin-left: 2px;
+	}
